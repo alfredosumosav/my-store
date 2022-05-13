@@ -11,7 +11,7 @@ export class AppComponent {
   isBtnDisabled = true;
 
   person = {
-    name: 'Alfredo',
+    name: 'alfredo',
     age: 18,
     img: "https://source.unsplash.com/random/"
   }
