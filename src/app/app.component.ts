@@ -9,4 +9,5 @@ export class AppComponent {
   name = 'Alfredo';
   age = 18;
   img = "https://source.unsplash.com/random";
+  isBtnDisabled = true;
 }
