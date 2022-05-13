@@ -6,8 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  name = 'Alfredo';
-  age = 18;
-  img = "https://source.unsplash.com/random";
   isBtnDisabled = true;
+
+  person = {
+    name: 'Alfredo',
+    age: 18,
+    img: "https://source.unsplash.com/random/"
+  }
+
+  toggleButton() {
+    this.isBtnDisabled = !this.isBtnDisabled;
+  }
+
+  increaseAge() {
+    this.person.age += 1;
+  }
 }
