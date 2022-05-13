@@ -1,8 +1,8 @@
 const username: string = 'alfredo';
 const sum = (a: number, b: number) => {
   return a + b;
-}
-sum(1,2);
+};
+sum(1, 2);
 
 // class Person {
 //   age: number;
@@ -15,9 +15,7 @@ sum(1,2);
 // }
 
 class Person {
-
-  constructor(private age: number, public name: string) {
-  }
+  constructor(private age: number, public name: string) {}
 }
 
 const alfredo = new Person(15, 'alfredo');
