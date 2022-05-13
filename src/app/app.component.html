@@ -1,3 +1,14 @@
+<h1>*ngFor</h1>
+<input type="text" [(ngModel)]="newName">
+<button (click)="addName()">Add Name</button>
+<ul>
+  <li *ngIf="names.length === 0">no more elements</li>
+  <li *ngFor="let name of names; index as i">
+    {{i}} {{name}}
+    <button (click)="deleteName(i)">Delete</button>
+  </li>
+</ul>
+<hr />
 <h1>*ngIf</h1>
 <input type="text" required [(ngModel)]="person.name" />
 <!-- <p *ngIf="person.name === 'alfredo'">Soy Alfredo</p>
@@ -11,6 +22,7 @@
 <ng-template #elseBlock>
   <p>I am an else block</p>
 </ng-template>
+<hr />
 <h1>NgModel</h1>
 <p>Name: {{person.name}}</p>
 <input type="text" required #nameInput="ngModel" [(ngModel)]="person.name" />
@@ -18,7 +30,7 @@
 <p>Age: {{person.age}}</p>
 <input type="number" max="18" min="10" required #ageInput="ngModel" [(ngModel)]="person.age" />
 <p>Valid: {{ageInput.valid}}</p>
-
+<hr />
 <h1>Events</h1>
 <button [disabled]="isBtnDisabled">Send</button>
 <button (click)="toggleButton()">Toggle Button</button>
