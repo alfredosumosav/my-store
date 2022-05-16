@@ -7,11 +7,11 @@
   <p *ngSwitchCase="'sebastian'">Hello Sebastian!</p>
   <p *ngSwitchDefault>no match!</p>
 </div>
-
+<hr />
 <h1>*ngFor Objects</h1>
-<div>
+<div class="products--grid">
   <div *ngFor="let product of products">
-    <img width="250" [src]="product.image" [alt]="product.name" />
+    <img [src]="product.image" [alt]="product.name" />
     <h4>{{product.price}}</h4>
     <p>{{product.name}}</p>
   </div>
