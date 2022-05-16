@@ -8,6 +8,7 @@ import { Product } from "./product.model";
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  widthImg = 10;
   isBtnDisabled = true;
 
   person = {
